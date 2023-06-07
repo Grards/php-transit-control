@@ -21,10 +21,24 @@
                     <legend>Identity informations</legend>
 
                     <label for="firstname">First Name : </label>
-                    <input type="text" id="firstname">
+                    <input type="text" id="firstname" minlength="3" maxlength="100" name="firstname">
 
                     <label for="lastname">Last Name : </label>
-                    <input type="text" id="lastname">
+                    <input type="text" id="lastname" minlength="3" maxlength="100" name="lastname">
+
+                    <label id="sexe" for="sexe">Gender : </label>
+                    <input type="radio" id="sexem" name="sexe" value="m" checked>
+                    <input type="radio" id="sexef" name="sexe" value="f">
+
+                    <label for="birthday">Date of birth : </label>
+                    <input type="date" id="birthday" min="1900-01-01" name="birthday">
+
+                    <label for="country-birth">Country of birth : </label>
+                    <select id="country-birth" name="country-birth">
+                    </select>
+
+                    <label for="register">National register number: </label>
+                    <input type="number" id="register" name="register">
                 </fieldset>
                 
             </form>
